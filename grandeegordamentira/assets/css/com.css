@@ -145,7 +145,49 @@ color: #fff;
       font-size: 2px;
     }
 
+
+    ul li{
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      list-style: none;
+      color: rgb(84, 84, 84);
+    }
+
+    ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+
+    ul li:before{
+      content: "\2713";
+      color: #4BB965;
+      margin-right: 5px;
+    }
+
+    ol li{
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      list-style: none;
+      color: rgb(84, 84, 84);
+    }
+
+    ol li:not(:last-child){
+      margin-bottom: 10px;
+    }
+
+    ol li:before{
+      content: "\0078";
+      color: #FF574C;
+      margin-right: 5px;
+    }
+
     .points{
       background-color: white;
       padding: 15px;
     }
+
+    .acabando{
+      background-color: #FF0075;
+      padding: 15px;
+    }
+
+
