@@ -92,7 +92,7 @@ color: #fff;
       display: block; 
       position: relative; 
       z-index: 1; 
-      padding: 0 15px; 
+      padding: 0 8px; 
       white-space: normal; 
       font-size: 25px;
       color: #ffffff; 
@@ -138,6 +138,8 @@ color: #fff;
 
     p {
       margin: 0;
+      font-size: 20px;
+      color: #363636;
     }
 
     section {
@@ -188,6 +190,29 @@ color: #fff;
     .acabando{
       background-color: #FF0075;
       padding: 15px;
+    }
+
+    .depoimentos{
+      background-color: white;
+      padding: 15px;
+    }
+
+    pl li{
+      font-size: 20px;
+      margin: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      list-style: none;
+      color: rgb(84, 84, 84);
+    }
+
+    pl li:not(:last-child){
+      margin-bottom: 15px;
+    }
+
+    pl li:before{
+      content: "\2713";
+      color: #FF0075;
+      margin-right: 10px;
     }
 
 
