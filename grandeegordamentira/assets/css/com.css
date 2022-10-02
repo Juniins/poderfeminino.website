@@ -45,7 +45,7 @@ body {
   vertical-align: baseline;
   color: #2e82bc; 
   outline: 0; 
-  line-height: 1; 
+  line-height: 1.5; 
   text-align: center; 
   position:relative!important; display: inline-block!important;
   border-style: solid; 
@@ -98,7 +98,6 @@ color: #fff;
       color: #ffffff; 
       font-family: Oswald; 
       font-weight: bold; 
-      text-shadow: #000000 0px 1px 0px;
       text-decoration: none;
     }
     .span-btn2 {
@@ -192,7 +191,7 @@ color: #fff;
       padding: 15px;
     }
 
-    .depoimentos{
+    .copy{
       background-color: white;
       padding: 15px;
     }
