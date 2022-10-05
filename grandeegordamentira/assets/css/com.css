@@ -214,4 +214,16 @@ color: #fff;
       margin-right: 10px;
     }
 
+    .deps{
+      background-color: #F3F4F7;
+    }
+
+    .deps3{
+      background-color: #F3F4F7;
+    }
+
+    /* Solid border */
+hr.solid {
+  border-top: 2px solid rgb(50, 50, 50);
+}
 
