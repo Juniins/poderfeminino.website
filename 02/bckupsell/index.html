@@ -2,6 +2,35 @@
 <html lang="pt-PT">
 
 <head>
+	  <!-- Abre Script Back-redirect -->
+	  <script type = "text/javascript">
+		(function(window, location) {
+		  var base=document.getElementsByTagName('base');
+		  var hasBase = base.length==1;
+		  var baseHref='';
+		  if (hasBase){
+			baseHref = base.href;
+			base[0].remove();
+		  }
+		  history.replaceState(null, document.title, location.pathname+"#!/stealingyourhistory");
+		  history.pushState(null, document.title, location.pathname);
+		  if (hasBase){
+			var newbase = document.createElement('base');
+			newbase.href = baseHref;
+			document.head.appendChild(newbase);
+		  }
+		
+		  window.addEventListener("popstate", function() {
+			if(location.hash === "#!/stealingyourhistory") {
+			  history.replaceState(null, document.title, location.pathname);
+			  setTimeout(function(){
+				location.replace("https://poderfeminino.website/02/bckupsell/");
+			  },0);
+			}
+		  }, false);
+		}(window, location));
+		</script>
+	  <!-- Fecha Script Back-redirect -->
 	<meta charset="UTF-8">
 
 <title>Cronograma 21 Dias - BackRedirect</title>
@@ -91,7 +120,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			<script>
 (function(w,d,s,t){
     if(w._brpUp)return;w._brpUp=t;var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
-    j.async=true;j.src="../../kiwify-upsell-trigger-rE1LBPa"+t;
+    j.async=true;j.src="../../kiwify-upsell-trigger-EnaGnb3"+t;
     f.parentNode.insertBefore(j,f);
 })(window,document,'script',Date.now());
 </script>		</div>
