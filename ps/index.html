@@ -1,50 +1,623 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <script>
-    !function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.install=t():e.install=t()}(window,(function(){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){"use strict";var r=this&&this.__spreadArray||function(e,t,n){if(n||2===arguments.length)for(var r,o=0,i=t.length;o<i;o++)!r&&o in t||(r||(r=Array.prototype.slice.call(t,0,o)),r[o]=t[o]);return e.concat(r||Array.prototype.slice.call(t))};!function(e){var t=window;t.KwaiAnalyticsObject=e,t[e]=t[e]||[];var n=t[e];n.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];var o=function(e,t){e[t]=function(){var n=Array.from(arguments),o=r([t],n,!0);e.push(o)}};n.methods.forEach((function(e){o(n,e)})),n.instance=function(e){var t=n._i[e]||[];return n.methods.forEach((function(e){o(t,e)})),t},n.load=function(t,r){n._i=n._i||{},n._i[t]=[],n._i[t]._u="https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js",n._t=n._t||{},n._t[t]=+new Date,n._o=n._o||{},n._o[t]=r||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src="https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid="+t+"&lib="+e;var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(o,i)}}("kwaiq")}])}));
-    </script>
-    <script>
-    kwaiq.load('394053697473102758');
-    kwaiq.track('contentView')
-    kwaiq.page();
-    </script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
 
-  <link rel="stylesheet" href="style.css">
-  <title>Oportunidade Única</title>
-</head>
-<body> 
-  <!-- Meta Pixel Code -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- End Meta Pixel Code -->
-  <div class="container">
-    <div class="black">
-      <div>
-        <h1>SOMENTE AS PRÓXIMAS 6 PESSOAS TERÃO ACESSO A ESSE CONTEÚDO</h1>
-        <div class="question">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/com.css">
+ 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WKTVR94');</script>
+  <!-- End Google Tag Manager -->
+
+
+		<!-- Abre Script Back-redirect -->
+		<script type = "text/javascript">
+			(function(window, location) {
+				var base=document.getElementsByTagName('base');
+				var hasBase = base.length==1;
+				var baseHref='';
+				if (hasBase){
+					baseHref = base.href;
+					base[0].remove();
+				}
+				history.replaceState(null, document.title, location.pathname+"#!/stealingyourhistory");
+				history.pushState(null, document.title, location.pathname);
+				if (hasBase){
+					var newbase = document.createElement('base');
+					newbase.href = baseHref;
+					document.head.appendChild(newbase);
+				}
+			
+				window.addEventListener("popstate", function() {
+				  if(location.hash === "#!/stealingyourhistory") {
+						history.replaceState(null, document.title, location.pathname);
+						setTimeout(function(){
+						  location.replace("https://pay.kiwify.com.br/zR9MCL2");
+						},0);
+				  }
+				}, false);
+			}(window, location));
+			</script>
+		<!-- Fecha Script Back-redirect -->
+
+    <!-- Título da Página -->
+    <title>Chega de Mentiras</title>
+    
+    <style type="text/css">
+      header {
+        color: black;
+        background-image: url("assets/img/bg.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #F3F4F7;
+      }
+    </style>
+
+  </head>
+  <body> 
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKTVR94"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <header class="py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+
+            <!-- SEÇÃO 1 -->
+
+            <!-- Headline -->
+              <center><h1 class="col-lg-10 text-center" class="my-4">Tudo que te falaram sobre perder peso é uma <b>GRANDE e GORDA MENTIRA!</b></h1></center><br>
+
+              <center><h2 class="col-lg-10 text-center" style="font-size: 23px;" class="my-4"> Você vai aprender a rotina matinal de 3 etapas que vai queimar até <b><font color="red">23kg de gordura</font> do seu bumbum, da barriga, das pernas, braços e do seu rosto.</b></h2></center>
+              <br>
+                             <!-- Abre CTA 1 -->
+            <div id="cta1">
+              <!--<p class="span-btn2"><font size="5px" color="#eb3434">De <s>R$127</s> </font> por: <font size="5px" color="#52f202"><b>De GRAÇA</b></font></p><div>
+                <p>Até o dia</p><script>
+                date = new Date().toLocaleDateString();
+                document.write(date);
+                </script>
+                </div><br> -->
+              <a href="https://pay.kiwify.com.br/zR9MCL2" class="a-btn" style="text-decoration: none;">
+                
+                <span class="span-btn"><img draggable="false" role="img" class="emoji" alt="" width="30px" src="./assets/img/iconeseta.png"> TOQUE PARA RECEBER O SEU!</span>
+                <!-- <span class="span-btn2">Compramos pra você! Pague somente o <br>Frete de R$9 (15 Unidades Restantes <img draggable="false" role="img" class="emoji" alt="🔥" width="15px" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f525.svg">) -->
+                </a>
+                </span>
+              </div>
+              <!-- Fecha CTA 1 -->
+              <p style="font-size: 14px;">✅ <b>DE GRAÇA HOJE - OFERTA LIMITADA!</b></p>
+              <p style="font-size: 14px;">✅ Mitos e Mentiras sobre perder peso</p>
+              <p style="font-size: 14px;">✅ Passo a Passo completo</p>
+              <p style="font-size: 14px;">✅ Receitas Poderosas Que Derretem Gordura</p>
+              <p style="font-size: 14px;">✅ Lista de compras (Ingredientes Baratos)</p>
+                
+                
+
+                <br>
+                
+                <img width="300" src="./assets/img/capa-ebook.png">
+              
+                <center><h2 style="font-size: 23px;"><font color="#000"><b>Receba <mark style="background-color:#4BB965; color:white;">DE GRAÇA</mark> sua cópia do Chega de Mentiras...</b></font></h2></center>
+
+                <!-- Bandeiras do cartão 
+                <center>
+                  <img height="40px" style="padding-top: 10px;" src="assets/img/bandeiras.png">
+                </center> -->
+            
+
+          </div>
         </div>
-        <button class="btn" onclick="window.location.href='https://google.com/'">CLIQUE AQUI PARA TER ACESSO</button>
-        <div class="answer">
+      </div>
+    </header>
+
+     
+            <!-- Botão 2 
+            <div id="cta2" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/2hhpfGZ" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO OBTER ACESSO AO PROGRAMA!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+              <center>
+                <img height="40px" style="padding-top: 10px;" src="assets/img/bandeiras.png">
+              </center>
+              -->
+            </div>
+          </div>
         </div>
-      </div>    
+      </div>
+    </section>
+
+    <div class="points">
+      <div class="container">
+
+      <center><h2><font color="#FF0075" style="font-size: 36px;"><b>"Eu vou comprar o livro pra você, e você paga somente o frete!"</b></font></h2></center>
+      <br>
+      <center><h2 style="font-size: 30px;"><font color="#000">É só falar pra onde devo enviar a sua cópia agora!</font></h2></center>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>O Chega de Mentiras <mark style="background-color:#4BB965; color:white;">é para você que...</mark></b></font></h2></center>
+      <br>
+      <ul>
+        <li style="line-height: 1.2;"><font size="5px">Está cansada de se sentir sempre feia e gorda</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Odeia quando parece que roupa nenhuma fica bonita em você</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Está cansada de olhar pro espelho e ver alguém que você não queria ser</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Não quer mais sentir tantas dores no corpo</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Quer ficar linda em qualquer roupa, inclusive de biquíni</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Não gosta/não pode fazer academia</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Quer emagrecer sem parar de comer as comidas gostosas que você ama</font></li>
+      </ul>
+<br>
+<br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>Mas, <mark style="background-color:#FF574C; color:white;">não é para você que...</mark></b></font></h2></center>
+      <br>
+      <br>
+
+      <ol>
+        <li style="line-height: 1.2;"><font size="5px">Quer continuar se sentindo sempre gorda e desajeitada em suas roupas</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Não liga de usar sempre roupas bem largas pra esconder a barriga</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Está bem com suas dores no corpo (joelho, coluna...)</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Não liga se as pessoas estão sempre olhando pra você na rua e usando "Aquela Mulher Gorda" quando estão falando de você</font></li>
+        <li style="line-height: 1.2;"><font size="5px">Não se incomoda com seu marido/namorado sempre olhando pra mulheres mais jovens e magrinhas na rua ou no celular</font></li>
+      </ol>
     </div>
-    <!-- <p style="text-align: center; font-weight: bold;">Este site não faz parte nem é endossado pelo Tiktok. Tiktok é uma marca comercial da Tiktok, Inc.</p>
-  </div> -->
-  <script type="text/javascript" src="script.js"></script>
+    <center><img width="300" src="./assets/img/capa-ebook.png"></center>
+  </div>
+    <!-- Fecha Seção Points-->
 
-</body>
-<footer>
-  <br>
-  <br>
-  <br>
-<p style="color: rgb(129, 129, 129); font-size: 12px; padding-left: 10px; padding-right: 20px;">Este site não faz parte, nem é endossado pelo Kwai.<br><br> 
-  CNPJ: 40.684.064/0001-73<br>
-  E-MAIL: suporte@descobertainovadora.site<br>
-  ENDEREÇO: Bom Jesus da Lapa, AV Manoel Novais</p>
-  <br>
-  <br>
-  <center><div class="text-white"><a href="https://zerobarrigaptc.com/termos" class="text-white">Termos de Uso</a> | <a href="https://zerobarrigaptc.com/privacidade" class="text-white">Política de Privacidade</a></div></center>
-</footer>
+    <!-- Abre Seção Escassez-->
+    <div class="acabando">
+      <div class="container">
+        <h1 style="color:white">Rápido! Essa oferta GRATUITA pode acabar a qualquer minuto!</h1>
+      </div>
+    </div>
+    <!-- Fecha Seção Escassez-->
+
+    <!-- Abre Seção Provas/Depoimentos-->
+    <div class="copy">
+      <div class="container">
+        <center><h2 style="font-size: 60px;"><font color="#FF0075">PROVA!</h2></center>
+        <center><h2 style="font-size: 25px;"><font color="#000">Uma prova disso é que o Chega de Mentiras já transformou completamente a vida de <b>mais de 170.000 pessoas</b> ao redor de mundo!</font></h2></center>
+        
+        <center><img width="300px" src="./assets/img/dep1.jpeg"></center>
+        <br>
+        <p style="font-size: 25px;">Tudo que te disseram sobre perder peso é uma Grande e Gorda Mentira!
+          <br><br>
+          Deixa eu adivinhar, te mandaram comer somente comidas saudáveis e sem gosto, contar calorias, cortar tudo que você gosta de comer, cortar carboidratos, ir na academia de 4 a 5 vezes na semana e ainda fazer um monte de dietas ridículas que nem mesmo funcionam... 
+          <br><br>
+          Aí você tentou fazer isso e percebeu não adiantou nada, as vezes até perdia um quilinho ou outro, mas logo voltava o peso tudo de novo.
+          <br><br>
+          Eu sei o que você está pensando. "Quem essa mulher pensa que é? E como ela sabe de tudo isso?".
+          <br><br>
+          Na verdade, apenas alguns meses atrás eu estava com quase <b>30 QUILOS ACIMA DO PESO</b> e pelos padrões médicos considerada clinicamente obesa!
+          <br><br>
+          Mas depois de passar por tudo isso que você está passando agora, sendo que inclusive tenho diabetes tipo 2, sou mãe de 4 filhos e tenho uma rotina bem puxada no trabalho, o que tornou minha joronada ainda mais difícil. Mas eu finalmente descobri toda verdade e <b>me livrei de uma vez por todas das dores fortes que eu sentia no joelho e na minha coluna!</b>
+          <br><br> 
+        </p>
+        <center><h2 style="font-size: 28px;"><font color="#000"><b>Você pode imaginar o que aconteceria se você descobrisse a VERDADE que me fez perder quase 30 quilos? </b></font></h2></center>
+        <br>
+        <p style="font-size: 25px;">
+        Desde que perdi quase 30kg e quebrei um recorde mundial, comecei a dedicar a minha vida a ajudar mulheres como VOCÊ <b>a perder peso definitivamente! Sem o efeito sanfona...</b>  
+        <br><br>
+        Com esse objetivo, já consegui ajudar 170.000 mulheres, e nesse processo percebi que 99,7% das mulheres se sentem presas. Elas foram enganadas pela corrupta indústria de perda de peso, que está a cada dia criando soluções falsas para tomar o seu dinheiro. 
+        <br><br>
+        Essas mulheres só precisam de algo REAL. Uma pessoa REAL que saiba exatamente o que é preciso para emagrecer.
+        <br><br>
+      </p>
+    <pl>
+      <li><font size="5px">E se eu te disser que você não precisa fazer exercícios para perder peso?</font></li>
+      <li><font size="5px">E se eu te disser que você pode comer o que quiser e o quanto quiser todos os dias?</font></li>
+      <li><font size="5px">E se eu te disser que você estar gorda não tem nada a ver com a sua genética, ou com o quanto você come?</font></li>
+      <li><font size="5px">E se eu te disser que é possível você queimar as suas reservas de gordura enquanto assiste TV e come pizza deitada no sofá?</font></li>
+    </pl>
+    <br><br>
+
+    <p style="font-size: 25px;">Eu sei que isso pode parecer um pouco assustador no começo, eu também fiquei exatamente assim como você e cada uma daquelas mais de 170.000 mulheres também...
+    <br><br>
+    Mas isso só acontece porque, por muitos anos, a indústria de emagrecimento vem mentindo pra gente dizendo que só é possível emagrecer tomando remédios, indo pra academia ou passando fome com dietas bizarras, tudo isso pra tomar o nosso dinheiro suado!
+    <br><br>
+    <b>Mas eu já estou cansada dessas mentiras!</b> É por isso que estou te dando esse livro que escrevi onde explico exatamente o que fiz para perder quase 30 quilos em tempo recorde!
+    <br><br>
+    <b>Chega de se sentir presa e insuficiente por causa das mentiras que te contaram!</b>
+    <br><br>
+    Foi esse exato conteúdo que também ajudou aquelas 170.000 mulheres a emagrecerem <b>depois de já terem perdido completamente as esperanças</b>.
+    <br><br>
+    </p>
+    <center><img width="300px" src="./assets/img/PORTAIS.png"></center>
+    <br>
+    <center><img width="320px" src="./assets/img/capa2-ebook.png"></center>
+
+  
+      </div>
+    </div>
+
+    <!-- Fecha Seção Provas/Depoimentos-->
+
+    <!-- Abre CTA 2-->
+    <div class="container">
+    <center><div id="cta1">
+      <a href="https://pay.kiwify.com.br/zR9MCL2" class="a-btn" style="text-decoration: none;">
+        <span class="span-btn" style="font-size: 20px;"><img draggable="false" role="img" class="emoji" alt="" width="25px" src="./assets/img/iconeseta.png"> SIM! Quero minha cópia GRATUITA do livro CHEGA DE MENTITAS!</span>
+        </a>
+        </span>
+      </div>
+    </center>
+  </div>
+
+
+    <!-- Fecha CTA 2-->
+    
+    </div>
+
+    <!-- Abre Seção Pronto-->
+    <div class="acabando">
+      <div class="container">
+        <h1 style="color:white">Você está pronta para essa transformação?</h1>
+      </div>
+    </div>
+    <!-- Fecha Seção Pronto-->
+    <br>
+
+    <!-- Abre Vídeo de Depoimento-->
+    <div class="vdep">
+      <div class="container">
+        <div style="position:relative;padding-top:56.25%;"><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/U_Wk79ZkEYo?controls=0" frameborder="0" style="border:3px solid rgb(255, 0, 119) ;position:absolute;top:0;left:0;" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        
+      </div>
+    </div>
+
+    
+    <!-- Video Depoimento-->
+    <br>
+    
+    <!-- Abre CTA 3 -->
+    <div class="depoimentos">
+      <div class="container">
+        
+    <center><div id="cta1">
+      <a href="https://pay.kiwify.com.br/zR9MCL2" class="a-btn" style="text-decoration: none;">
+        <span class="span-btn" style="font-size: 20px;"><img draggable="false" role="img" class="emoji" alt="" width="25px" src="./assets/img/iconeseta.png"> SIM! Quero minha cópia GRATUITA do livro CHEGA DE MENTIRAS!</span>
+        </a>
+        </span>
+      </div>
+    </center>
+    <br>
+
+    <center><h2 style="font-size: 25px;"><font color="#000">Se você já está cheia de todas essas mentiras e soluções falsas, olha essas <b>histórias de sucesso incríveis de mulheres reais como você</b> que receberam este mesmo material...</font></h2></center>
+      </div>  
+      <br>    
+    </div>
+    <!-- Fecha CTA 3 -->
+    
+    <!-- Abre Depoimentos-->
+
+     <div class="deps">
+      <br>
+      <div class="container">
+
+        <center><h2 style="font-size: 40px;"><font color="#FF0075">ALESSANDRA</h2></center>
+          <center><h2 style="font-size: 28px;"><font color="#000"><i>Uma drástica mudança do corpo e da mente...</i></font></h2></center>
+          <center><img width="300px" src="./assets/img/depoimentos/Alessandra-Antes.png"></center>
+          <br>
+          <center><h2 style="font-size: 28px;"><font color="#000">"Eu pensei que fosse normal me sentir do jeito que eu me sentia..."</font></h2></center>
+          <center><img width="300px" src="./assets/img/depoimentos/Alessandra-Depois.png"></center>
+          <br>
+          <p style="font-size: 25px;">Tem menos de 2 meses que eu comprei o livro Chega de Mentiras, custou mais ou menos R$95. Minha vida mudou por completo, muito mais do que eu pensava que fosse capaz de mudar. Perdi uns 18 quilos. tive até que comprar roupas novas correndo porque as minhas roupas ficaram muito folgadas em questão de poucas semanas. Pra mim, o que tirei desse livro incrível, além de mudar o meu corpo, foi que ele mudou minha mente.</p>
+          <br>
+          <center><h2 style="font-size: 28px;"><font color="#000"><b>"Ele realmente mudou minha vida!"</b></font></h2></center>
+          <br>
+          <p style="font-size: 25px;">Ele mudou a forma como eu me vejo, minha auto-estima, autoconfiança, amor próprio. Achei que era normal eu me sentir sempre mal, estressada, ansiosa, com pensamentos negativos, me sentindo um lixo, com problemas para dormir, com fortes dores de cabeça e dores insuportáveis pelo corpo todo, Eu também achei que era normal meu marido olhar pra outras mulheres mais magras e "durinhas" quando a gente saía. Este programa me ensinou muito sobre mim mesma e como me amar e me respeitar. Também descobri que sou muito mais forte do que eu imaginava, é incrível levantar da cama e se sentir jovem e capaz de fazer qualquer coisa. Finalmente meu casamento está na melhor fase de novo, hoje meu marido olha pra mim com aquele mesmo olhar apaixonado de quando nos conhecemos e aliás, ele decidiu seguir meu exemplo e agora já perdeu mais de 8 quilos só nessas últimas semanas. Esse conhecimento melhorou em 100%, me sinto uma mulher completamente renovada.</p>
+          <center><img width="300px" src="./assets/img/depoimentos/Alessandra com o livro.png"></center>
+          <br>
+          <center><h2 style="font-size: 28px;"><font color="#000"><b>"É incrível se sentir capaz de fazer qualquer coisa!"</b></font></h2></center>
+      
+          <!-- Abre CTA 4-->
+    <div class="container">
+      <center><div id="cta1">
+        <a href="https://pay.kiwify.com.br/zR9MCL2" class="a-btn" style="text-decoration: none;">
+          <span class="span-btn" style="font-size: 20px;"><img draggable="false" role="img" class="emoji" alt="" width="25px" src="./assets/img/iconeseta.png"> SIM! Quero minha cópia GRATUITA do livro CHEGA DE MENTIRAS!</span>
+          </a>
+          </span>
+        </div>
+      </center>
+    </div>
+      <!-- Fecha CTA 4-->
+
+      <br>
+    </div>
+  </div>
+
+  <div class="deps2">
+    <div class="container">
+<br>
+      <center><h2 style="font-size: 40px;"><font color="#FF0075">MILENE</h2></center>
+      <center><h2 style="font-size: 28px;"><font color="#000"><i>Da vergonha ao amor próprio</i></font></h2></center>
+      <center><img width="300px" src="./assets/img/depoimentos/Milene Antes.png"></center>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>"Comecei a comer compulsivamente quando tinha 5 ou 6 anos."</b></font></h2></center>
+      <center><img width="300px" src="./assets/img/depoimentos/Milene Depois.png"></center>
+      <br>
+      <p style="font-size: 25px;">"Eu perdi 31kg e vários números no manequim! Ganhei uma autoestima que nunca tive antes... Me sinto bem mais saudável, cheia de energia, sem dores no corpo e me sentindo totalmente transformada corpo e mente. Pra mim isso é muito mais valioso do que só a perda de peso em si. Eu lutei com o meu peso durante toda a minha vida, tenho 38 anos e tudo começou quando eu era criança. Eu comecei a comer compulsivamente quando eu tinha uns 5, 6 anos e continuei por toda a minha vida... pra falar a verdade eu nunca soube o que era amor próprio, cuidar de mim mesma ou olhar no espelho logo de manhã e me sentir orgulhosa e poderosa. Meu peso só aumentava e as vezes ficava ocilando um pouco... Eu cheguei a gastar literalmente milhares de reais com remédios, academia, personal trainer, dietas e tudo que você imagina. Mais tarde, na minha primeira gravidez, eu ganhei quase 30kg, e minha saúde emocional, física e mental ficaram em um estado gravíssimo. Tudo por causa do meu vício por comida"</p>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>"Eu ganhei 30kg em um ano..."</b></font></h2></center>
+      <br>
+      <p style="font-size: 25px;">"E assim sempre que algo estava indo mal na minha vida eu corria pra geladeira e me entupia de comida até não conseguir levantar... E assim eu ganhei 30kg em um ano. Lembro que eu fechei os olhos e apertei forte os meus detes quando o médico me pediu pra subir na balança, eu abri os olhos e olhei pra balança desapontada, aqueles números altos eram o reflexo de como eu estava me sentindo por dentro... Eu tinha atingido completamente o fundo do poço, nenhuma das minhas roupas estavam ficando boas em mim e a maioria nem entrava mais no meu corpo. Foi aí que minha mãe me deu o chega de mentiras, eu segurei o livro com medo dessa ser apenas mais uma daquelas tentativas falhas onde eu só ia me decepcionar e me sentir ainda pior do que antes de ter ter começado, afinal, eu já tinha gastado milhares de reais tentando outras coisas e nada tinha funcionado. Mas já que já estava naquela situação, eu senti que precisava de pelo menos um pouco de esperança, reunir a minha fé e tentar só mais uma vez. E foi simplesmente surpreendente, vocês podem constatar isso nas minhas fotos de antes e depois que mostrei acima, nenhum outro programa fez por mim a metade do que o chega de mentiras fez... Ele me salvou!... Todos os dias eu agradeço minha mãe por ter me dado esse programa que me transformou pra sempre!"</p>
+      <center><img width="300px" src="./assets/img/depoimentos/Milene com o livro.png"></center>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>"Nenhum outro programa fez por mim a metade do que o chega de mentiras fez... Ele me salvou!"</b></font></h2></center>
+      <br>
+                <!-- Abre CTA 5-->
+    <div class="container">
+      <center><div id="cta1">
+        <a href="https://pay.kiwify.com.br/zR9MCL2" class="a-btn" style="text-decoration: none;">
+          <span class="span-btn" style="font-size: 20px;"><img draggable="false" role="img" class="emoji" alt="" width="25px" src="./assets/img/iconeseta.png"> SIM! Quero minha cópia GRATUITA do livro CHEGA DE MENTIRAS!</span>
+          </a>
+          </span>
+        </div>
+      </center>
+    </div>
+      <!-- Fecha CTA 5-->
+      <br>
+
+    </div>
+  </div>
+
+<div class="deps3">
+  <div class="container">
+    <br>
+    <center><h2 style="font-size: 40px;"><font color="#FF0075">JAQUELINE</h2></center>
+    <center><h2 style="font-size: 28px;"><font color="#000"><i>Lutando contra a ansiedade e depressão</i></font></h2></center>
+    <center><img width="300px" src="./assets/img/depoimentos/Jaqueline Antes.png"></center>
+    <br>
+    <center><h2 style="font-size: 28px;"><font color="#000"><b>"Eu fiquei acima do peso por 10 anos"</b></font></h2></center>
+    <center><img width="300px" src="./assets/img/depoimentos/Jaqueline Depois.png"></center>
+    <p style="font-size: 25px;">"Antes de começar o chega de mentiras, eu era bem deprimida. Sentia como se já tivesse tentado de tudo e não tinha mais solução pra mim a não ser desistir de tudo. Mas agora eu me sinto incrível. O programa é completamente inspirador, minha parte preferida do programa é a comunidade.</p>
+    <br>
+    <center><h2 style="font-size: 28px;"><font color="#000"><b>"O programa é completamente inspirador"</b></font></h2></center>
+    <p style="font-size: 25px;">Acho que é a minha parte preferida porque você não se sente sozinha, muito pelo contrário, tem várias outras mulheres ali que já passaram pelas mesmas dificuldades que você está passando agora, então elas sempre me ajudam a passar pelas minhas dificuldades, me dão dicas, ideias, compartilham receitas... Eu senti que isso ajudou a acelerar e muito os meus resultados! Sinto que cresci não só na minha jornada rumo ao emagrecimento, mas também como pessoa, pois sempre me apoiam e conversam comigo quando estou tendo um dia ruim, isso é até uma terapia pra mim, muito especial mesmo"</p>
+    <center><img width="300px" src="./assets/img/depoimentos/Jaqueline com o livro.png"></center>
+    <br>
+    <center><h2 style="font-size: 28px;"><font color="#000"><b>"Estou com 65kg, me sinto alegre e disposta o tempo todo, de bem com a vida!"</b></font></h2></center>
+    <br>
+
+    <!-- Abre CTA 6-->
+    <div class="container">
+      <center><div id="cta1">
+        <a href="https://pay.kiwify.com.br/zR9MCL2" class="a-btn" style="text-decoration: none;">
+          <span class="span-btn" style="font-size: 20px;"><img draggable="false" role="img" class="emoji" alt="" width="25px" src="./assets/img/iconeseta.png"> SIM! Quero minha cópia GRATUITA do livro CHEGA DE MENTIRAS!</span>
+          </a>
+          </span>
+        </div>
+      </center>
+    </div>
+      <!-- Fecha CTA 6-->
+      <br>
+                 
+  </div>
+</div>
+
+<div class="deps4">
+  <div class="container">
+    <br>
+    <center><h2 style="font-size: 40px;"><font color="#FF0075">ANDREIA</h2></center>
+      <center><h2 style="font-size: 28px;"><font color="#000"><i>A mãe que faz tudo</i></font></h2></center>
+      <center><img width="300px" src="./assets/img/depoimentos/Andreia Antes.png"></center>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>"Eu estava comendo meus sentimentos..."</b></font></h2></center>
+      <center><img width="300px" src="./assets/img/depoimentos/Andreia Depois.png"></center>
+      <br>
+      <p style="font-size: 25px;">Sempre fui considerada acima do peso... Depois da faculdade me apaixonei pelo meu melhor amigo. Nos casamos, tivemos dois filhos. Na minha gravidez eu ganhei em torno de 22kg. Eu só consegui perder 6kg até a minha segunda gravidez...
+        <br>
+        Meu segundo filho nasceu 2 meses antes do tempo, ele ficou 3 meses na encubadora. Essa foi a pior época da minha vida, eu fiquei bem ansiosa e desesperada, me sentindo completamente culpada por ter colocado ele nessa situação, porque se você está acima do peso, tem grandes chances de ter uma gravidez de risco. E lamentavelmente tudo que eu conseguia fazer era comer, então eu praticamente "comia meus sentimentos", porque essa era a única maneira que eu encontrava para diminuir a minha ansiedade naquele momento doloroso. Então eu ficava comendo enquanto meu bebê lutava pela vida. Bicoitos, lanches, hambúrgueres, pizza... Isso nem era recomendado pelos médicos e eles reclamavam o tempo todo, mas eu simplesmente não conseguia controlar isso. Em uma das vezes em que meu marido saiu para comprar algo para eu comer, eu caí da cama e não consegui levantar, eu senti tudo dentro de mim se contorcendo... Foi quando ele chegou e olhou pra mim com uma cara de pena e decepção ao mesmo tempo. Naquele momento eu só queria morrer! Eu estava me sentindo completamente envergonhada, sentindo meu coração partido, com ansiedade, morta de preocupações com meu bebê... Meu marido rapidamente gritou pedindo ajuda e começou a me levantar e perguntar se estava tudo bem, eu olhei pra ele chorando e tudo que eu consegui pensar foi "Nossa, como ele ainda está comigo?". Naquele momento eu sabia que tinha que mudar alguma coisa...</p>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>"Perdi 25kg em menos de 2 meses"</b></font></h2></center>
+      <p style="font-size: 25px;">Então eu vi várias mulheres mostrando seus resultados depois de fazerem esse programa e pensei, se elas podem fazer isso, eu também posso! Então eu corri e comprei o livro e comecei a colocar em prática no mesmo dia, e eu finalmente consegui! Perdi 25 quilos em menos de 2 meses e continuo emagrecendo. E não é só sobre meu corpo, é sobre me sentir forte, saudável, bonita, ter essa confiança em mim mesma e saber que posso fazer o que eu quiser, me sentindo sempre viva e cheia de energia pra gastar no meu dia a dia, brincando com meus filhos e vendo eles crescerem. Eu gostaria de ter recebido esse livro antes rsrs, queria ter recebido logo nas minhas primeiras tentativas de emagrecer, aí teria sido bem mais fácil, teria poupado muito dinheiro e lágrimas a cada vez que eu tentava e fracassava. Mas eu finalmente recuperei minha autoconfiança. Meus filhos têm uma mãe ativa e saudável... Minha saúde está incrível!...</p>
+      <center><img width="300px" src="./assets/img/depoimentos/Andreia com o Livro.png"></center>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>"É sobre me sentir forte, bonita e ter essa confiança em mim mesma..."</b></font></h2></center>
+      <br>
+      <!-- Abre CTA 7-->
+    <div class="container">
+      <center><div id="cta1">
+        <a href="https://pay.kiwify.com.br/zR9MCL2" class="a-btn" style="text-decoration: none;">
+          <span class="span-btn" style="font-size: 20px;"><img draggable="false" role="img" class="emoji" alt="" width="25px" src="./assets/img/iconeseta.png"> SIM! Quero minha cópia GRATUITA do livro CHEGA DE MENTIRAS!</span>
+          </a>
+          </span>
+        </div>
+      </center>
+    </div>
+      <!-- Fecha CTA 7-->
+  </div>
+</div>
+
+<div class="deps5">
+  <div class="container">
+    <br>
+    <center><h2 style="font-size: 40px;"><font color="#FF0075">RAIANE</h2></center>
+      <center><h2 style="font-size: 28px;"><font color="#000"><i>Eu estava deprimida e infeliz com minha barriga</i></font></h2></center>
+      <center><img width="300px" src="./assets/img/depoimentos/Raiane Antes 1.jpeg"></center>
+      <center><img width="300px" src="./assets/img/depoimentos/Raiane Depois 1.png"></center>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>"Eu perdi 15 quilos em 30 dias!"</b></font></h2></center>
+      <br>
+      <center><img width="300px" src="./assets/img/depoimentos/Raiane Antes 2.png"></center>
+      <center><img width="300px" src="./assets/img/depoimentos/Raiane Depois 2.png"></center>
+      <br>
+      <p style="font-size: 25px;">"Eu ganhei o livro chega de mentiras de uma amiga minha nutricionista tem pouco mais de dois meses, mas logo que ganhei eu não levei a sério... Porque eu não acreditava que eu era capaz. Eu estava muito preocupada achando que eu nunca conseguiria emagrecer, mas continuei inventando desculpas, mas um mês depois (há uns 30 dias mais ou menos), a minha crise de ansiedade começou a aumentar drásticamente e minha depressão só piorava. Nisso eu engordei uns 15 quilos só nesse tempo!... Isso foi assustador, eu percebi que era porque sempre que eu estava lidando com um problema emocional eu sentava na frente da tv e começava a atacar a geladeira. Eu só comia o dia todo, porque era a única coisa que me deixava feliz. Todo dinheiro que eu ganhava eu gastava com comida, até que um dia eu pensei, "pra onde essa comida toda está indo?", parece bem óbvia essa pergunta, mas ninguém pensa nisso quando está em uma profunda depressão e a única coisa que faz da vida é comer... Então foi aí que eu decidi subir na balança e levei um susto quando percebi que tinha ganhado 15 quilos. Eu realmente estava me afundando junto com a minha depressão, estava transformando meu corpo em uma coisa doentia que eu odiava. Eu não gostava de nada no meu corpo. Não estava nada saudável e estava bem deprimida e decepcionada."</p>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>"Todo dinheiro que eu ganhava eu gastava com comida"</b></font></h2></center>
+      <br>
+      <p style="font-size: 25px;">"Lembro que me sentei ali no chão do banheiro e comecei a chorar pensando no que minha vida tinha se tornado... Eu não queria ser aquela pessoa infeliz durante a minha vida toda. Então eu lembrei daquele livro que minha amiga nutricionista tinha me dado e comecei a ler cada palavra desse livro incrível e foi simplesmente maravilhoso! Ler isso livro foi a melhor coisa que eu já fiz por mim. Estou muito mais feliz e muito mais saudável! Eu passei de não querer estar viva para não querer apenas viver, quero muito mais, quero desfrutar de cada momento da minha vida e ser muito feliz em cada um deles, assim como sou agora. Esse livro praticamente cuidou de mim quando eu mais precisei! Ele me mostrou que posso comer o que eu quiser, porém da forma correta, então eu não sinto falta de absolutamente nada, pois consigo comer o que eu quiser e ainda assim ser muito saudável, alegre, com minha autoestima lá em cima, me sentindo linda e radiante todos os dias. E assim comecei perdendo 5kg, e quando fui perceber já tinha perdido mais de 15kg, e passou bem rápido, porque não senti que eu estava fazendo uma dieta ou qualquer esforço, eu simplesmente entendi como fazer as coisas da maneira correta e a partir daí comecei a emagrecer mesmo comendo de tudo, e hoje sinto muito orgulho da mulher que me tornei! E você? O que está esperando pra viver essa transformação? Você também merece se amar!"</p>
+      <br>
+      <center><img width="300px" src="./assets/img/depoimentos/Raiane com o livro.png"></center>
+      <br>
+      <center><h2 style="font-size: 28px;"><font color="#000"><b>"Você também merece se amar!"</b></font></h2></center>
+      <br>
+
+    <!-- Abre CTA 8-->
+    <div class="container">
+      <center><div id="cta1">
+        <a href="https://pay.kiwify.com.br/zR9MCL2" class="a-btn" style="text-decoration: none;">
+          <span class="span-btn" style="font-size: 20px;"><img draggable="false" role="img" class="emoji" alt="" width="25px" src="./assets/img/iconeseta.png"> SIM! Quero minha cópia GRATUITA do livro CHEGA DE MENTIRAS!</span>
+          </a>
+          </span>
+        </div>
+      </center>
+    </div>
+    <!-- Fecha CTA 8-->
+
+  </div>
+</div>
+    <!-- Fecha Depoimentos-->
+    <br>
+    <!-- Abre Seção Pronto2-->
+    <div class="acabando">
+      <div class="container">
+        <br>
+        <h1 style="color:white">Como você pode ver...</h1>
+        <br>
+        <hr class="solid">
+        <br>
+        <h1 style="color:white">O Chega de Mentiras já ajudou milhares de pessoas ao redor do mundo a conseguirem emagrecer...</h1>
+        <br>
+        <hr class="solid">
+        <br>
+        <h1 style="color:white; font-size: 35px;">A pergunta é, <u><b>Você</b></u> topa ser a próxima?</h1>
+      </div>
+    </div>
+    <!-- Fecha Seção Pronto2-->
+
+        <!-- Abre Urgencia-->
+
+        <div class="urgencia">
+          <div class="container">
+            <br>
+            <p style="font-size: 25px;"><b>Você precisa desse livro!</b> Se você quer descobrir como emagrecer de verdade, sente que já tentou de tudo e nada parece funcionar, é desse livro que você precisa! Talvez você já tenha um conhecimento sobre o que é preciso para emagrecer, mas por algum motivo sempre que você começa a colocar em prática acaba dando errado e você volta ao mesmo peso que tinha antes de começar ou até mais gorda.</p>
+            <br>
+            <p style="font-size: 25px;">Se permita viver essa transformação! Você também merece se sentir completa, alegre, cheia de vida... Uma mulher feliz, contente com o seu corpo e mente, superando seus medos e traumas, <b>isso é muito mais do que apenas emagrecer!</b></p>
+            <br>
+            <p style="font-size: 25px;">Eu escrevi esse livro porque também já estive aí no seu lugar, tentando emagrecer e nada funcionando... Eu estava com quase 30 quilos acima do peso, considerada clinicamente obesa pelos padrões médicos.</p>
+            <br>
+            <center><h2 style="font-size: 30px; line-height: 1.5;"><font color="#FF0075"><b>Eu Não Tinha Energia. Eu Tinha Zero Autoconfiança e Não Tinha Ideia Por Onde Começar... Por Isso Escrevi Esse livro... Pra te ajudar a superar também!</b></h2></center>
+              <br>
+              <p style="font-size: 25px;">Não importa se você tem 5 ou 30 quilos pra perder, tudo que eu aprendi ao longo da minha jornada e ajudando mais de 170.000 pessoas a emagrecerem de forma saudável e sem passar fome, foi compilado em um passo a passo simples que você vai aprender em poucos minutos assim que receber o seu livro.</p>
+              <br>
+              <center><img width="300px" src="./assets/img/capa2-ebook.png"></center>
+              <br>
+              <center><img width="300px" src="./assets/img/PORTAIS.png"></center>
+              <br>
+              <center><h2 style="font-size: 35px; line-height: 1.5; "><font color="#FF0075"><b>O Que Significaria Pra Você Se Você Pudesse Emagrecer E Conseguisse Manter Esse Peso Sem Ficar Gorda De Novo?</b></h2></center>
+                <br>
+
+                <pl>
+                  <li><font size="5px">Amando se ver no espelho</font></li>
+                  <li><font size="5px">Ficar linda em qualquer roupa</font></li>
+                  <li><font size="5px">Não ter que usar roupas folgadas pra esconder a barriga</font></li>
+                  <li><font size="5px">Se sentir linda de biquíni na praia ou piscina</font></li>
+                  <li><font size="5px">Ter energia e se sentir presente para a sua família</font></li>
+                  <li><font size="5px">Que tal se sentir linda, charmosa e sexy para o seu marido?</font></li>
+                </pl>
+                <br>
+                <p style="font-size: 25px;">O Chega de Mentiras é a transformação verdadeira e honesta que você está procurando.</p>
+                <br>
+                <br>
+                <center><h2 style="font-size: 35px; "><font color="#FF0075"><b>A HORA É AGORA!</b></h2></center>
+                  <br>
+                  <p style="font-size: 25px; ">Você está pronta para mudar? Você está pronta pra ser a sua melhor versão? Você está pronta pra se sentir melhor?</p>
+               <br> 
+          </div>
+         </div>
+        <!-- Fecha Urgencia-->
+
+       <!-- Abre Garantia-->
+
+       <div class="garantia">
+        <div class="container">
+          <br>
+          <center><h2 style="font-size: 28px;"><font color="#f20008"><b>Você vai me chamar de louca quando eu te falar minha garantia!</b></font></h2></center>
+          <br>
+          <p style="font-size: 23px">Eu te garanto 100% que você vai conseguir alcançar todos os seus objetivos com esse livro. Se por algum motivo você não gostar dele, eu devolvo cada centavo do dinheiro que você gastou com o frete (já que estou te dando esse livro <b>Totalmente DE GRAÇA</b>), e além de devolver o seu dinheiro do frete, eu vou deixar você ficar com o livro.
+            <br><br>
+            Isso mesmo! Não precisa enviar de volta. E ainda <b>Vou Te PAGAR R$50 (Cinquenta Reais)</b> pelo seu tempo perdido. Basta me enviar um e-mail ou chamar no suporte do whatsapp e vou devolver o seu dinheiro do frete e ainda te dar R$50, Sem nem fazer perguntas.
+            <br><br>
+            Estou fazendo isso pra te provar o quanto eu confio que esse programa vai transformar sua vida de uma vez por todas!
+            <br>
+            Parece justo?
+          </p>
+          <br>
+          <center><img width="300px" src="./assets/img/capa-ebook.png"></center>
+          <center><img width="300px" src="./assets/img/PORTAIS.png"></center>
+          <br>
+          <center><h2 style="font-size: 28px;"><font color="#000"><b>Concordo com você... O que estou fazendo aqui é realmente uma loucura!</b></font></h2></center>
+          <br>
+          <center><h2 style="font-size: 35px; "><b>Por isso essa é uma <font color="#FF0075">OFERTA LIMITADA</font> e pode acabar assim que você deixar essa página...</b></h2></center>
+          <br>
+          <p style="font-size: 23px">Obrigada por ter chegado até aqui e espero que goste do livro!
+          <br><br>
+          <b>PS:</b> Caso você seja uma pessoa ansiosa assim como eu e tenha pulado para o final, vou resumir pra você:
+          <br><br>
+          Estou te enviando um livro de 160 páginas, <b>"O Chega de Mentiras"</b>. O mercado de emagrecimento está cheio de mentiras, e <b>essa foi a verdade que me ajudou a perder quase 30 quilos</b>, sem desistir de comer pizza, sorvete e tudo que eu amo comer... (<b>Este livro normalmente é vendido por R$95</b>), mas hoje estou te dando ele (DE GRAÇA). Sim, o livro vai sair de graça pra você e você vai pagar somente o frete de R$9 para qualquer lugar do mundo.
+          <br><br>
+          E se você enjoar do livro eu te devolto esses R$9 do frete e você pode ficar com o livro. <b>E ainda te mando R$50</b> pra me desculpar pelo seu tempo.
+          <br><br>
+          Então, clique no botão abaixo para obter sua cópia <b>GRATUITA</b> agora. Você não vai se arrepender.
+          </p>
+
+          <br>
+    <!-- Abre CTA 9-->
+    <div class="container">
+      <center><div id="cta1">
+        <a href="https://pay.kiwify.com.br/zR9MCL2" class="a-btn" style="text-decoration: none;">
+          <span class="span-btn" style="font-size: 20px;"><img draggable="false" role="img" class="emoji" alt="" width="25px" src="./assets/img/iconeseta.png"> SIM! Quero minha cópia GRATUITA do livro CHEGA DE MENTIRAS!</span>
+          </a>
+          </span>
+        </div>
+      </center>
+    </div>
+    <!-- <center><img width="300px" src="./assets/img/PORTAIS.png"></center> -->
+    <br>
+    <!-- Fecha CTA 9-->
+        </div>
+       </div>
+      <!-- Fecha Garantia-->
+
+
+      <!-- Abre Portais-->
+      <div class="portais">
+        <div class="container">
+          <br>
+          <center><img width="300px" src="./assets/img/selos.png"></center>
+          
+        </div>
+      </div>
+      <!-- Fecha Portais-->
+      
+
+        
+    <footer class="bg-dark py-3 text-center">
+      <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./assets/js/com.js"></script>
+
+  </body>
 </html>
