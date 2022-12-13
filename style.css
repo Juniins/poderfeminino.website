@@ -1,4 +1,3 @@
-@charset "utf-8";
 @font-face {
 	font-family: Gotham Rounded;
 	src: url("font.otf") format("opentype");
@@ -18,31 +17,14 @@ body {
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgb(255, 255, 255);
-	background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-blend-mode: darken;
+	background-size: cover;
+	background-color: #f6f6f6;
 }
-
-.btn-only {
-	width: 100%;
-	padding: 10px 0;
-	background: #00e676;
-	border: 0;
-	outline: none;
-	color: white;
-	font-size: 30px;
-	border-radius: 7px;
-	cursor: pointer;
-	box-shadow: 0 3px 0px rgba(0, 0, 0, 0.2);
-}
-
-
 
 .container {
 	width: 700px;
 	max-width: 90%;
+	padding-top: 20%;
 }
 
 .black {
@@ -50,8 +32,6 @@ body {
 	padding: 10px;
 	text-align: center;
 	border-radius: 20px;
-	box-shadow: 0 0 100px 0px #0ad003;
-	
 }
 
 .answer {
@@ -60,13 +40,32 @@ body {
 	gap: 10px;
 }
 
-
+.btn {
+	width: 100%;
+	padding: 10px 0;
+	background: #00d307;
+	border: solid 6px rgb(0, 0, 0);
+	outline: none;
+	color: rgb(255, 255, 255);
+	font-size: 50px;
+	border-radius: 7px;
+	cursor: pointer;
+	box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+	
+}
 
 .black h1 {
-	color: #0ad003;
+	color: black;
+	font-style: inherit;
+	font-size: 35px;
 }
 
 .black p {
 	font-size: 18px;
+	font-style: inherit;
 	color: black;
 }
+
+.p2 {
+	font-size: 18px;
+	color: white;
